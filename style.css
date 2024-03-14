@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --primary-backgrand-color-1: #161616;
+  --primary-backgrand-color-2: #454545;
+  --primary-color1: rgb(226, 211, 124);
+  --primary-color2: #f99901;
+  --primary-color3: #b37004;
+  --primary-color4: #7c4e03;
+  --primary-color5: rgb(6, 175, 175);
+  --primary-color6: rgb(6, 144, 144);
+  --primary-color7: rgb(100, 170, 170);
+  --primary-size-20: 20px;
+  --primary-size-40: 40px;
+  --primary-gap-20: 20px;
+  --primary-gap-50: 50px;
+  --primary-border-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--primary-backgrand-color-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--primary-gap-20);
+}
+
+.heading {
+  color: var(--primary-color2);
+  text-shadow: 2px 2px 20px #fff;
+  font-weight: bold;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.container {
+  background-color: var(--primary-color1);
+  width: 600px;
+  height: 700px;
+  border-radius: var(--primary-border-radius);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--primary-gap-20);
+}
+
+.main {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+}
+
+.main > input {
+  border: none;
+  outline: none;
+  font-size: var(--primary-size-20);
+  font-style: italic;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--primary-gap-20);
+}
+label {
+  color: var(--primary-backgrand-color-1);
+  font-size: var(--primary-size-20);
+}
+
+.double {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--primary-gap-20);
+  width: 100%;
+}
+
+.form-spending,
+.form-price {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+
+input {
+  border: 2px solid gray;
+  border-radius: var(--primary-border-radius);
+  padding: 10px;
+  background-color: var(--primary-backgrand-color-2);
+  color: var(--primary-color1);
+}
+#spending-input::placeholder,
+#price-input::placeholder {
+  color: var(--primary-color1);
+}
+
+.btn {
+  background-color: var(--primary-color5);
+  color: var(--primary-color1);
+  border-radius: var(--primary-border-radius);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  scale: 0.95;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.form-status {
+  display: flex;
+  align-items: center;
+  gap: var(--primary-gap-20);
+}
+
+.total {
+  background-color: var(--primary-color6);
+  color: var(--primary-color1);
+  padding: 10px 20px;
+  border-radius: var(--primary-border-radius);
+  font-size: var(--primary-size-20);
+}
+
+.total span {
+  color: var(--primary-backgrand-color-2);
+  text-decoration: underline red;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--primary-gap-20);
+  margin-top: 30px;
+  overflow: auto;
+  font-size: var(--primary-size-20);
+  border-radius: var(--primary-border-radius);
+}
+
+.spending {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: var(--primary-border-radius);
+  gap: var(--primary-size-20);
+  background-color: var(--primary-color7);
+}
+.spending:hover{
+  cursor: pointer;
+  background-color: var(--primary-color6);
+}
+
+.buttons img {
+  width: 50px;
+  height: 50px;
+}
+
+.buttons img:nth-child(2) {
+  width: 40px;
+  height: 40px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: var(--primary-gap-20);
+}
+
+.spending h2:nth-child(2) {
+  color: rgb(193, 4, 4);
+}
+
+.payed {
+  opacity: 0.6;
+}
+
+.payed h2:nth-child(1),
+.payed h2:nth-child(2) {
+  text-decoration: line-through;
+  color: var(--primary-color2);
+}
+
+#filter-select {
+  padding: 5px 5px;
+  font-size: var(--primary-size-20);
+  background-color: var(--primary-backgrand-color-2);
+  color: var(--primary-color1);
+  border-radius: var(--primary-border-radius);
+}
